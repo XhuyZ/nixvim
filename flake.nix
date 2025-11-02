@@ -53,6 +53,7 @@
           nvimWithMeta
           pkgs.dotnet-sdk
           pkgs.dotnet-aspnetcore
+          pkgs.gcc
         ];
       };
     };

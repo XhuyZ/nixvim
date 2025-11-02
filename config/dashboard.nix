@@ -1,6 +1,7 @@
 {
   plugins.startup = {
     enable = true;
+    settings = {
     colors = {
       background = "#ffffff";
       foldedSection = "#ffffff";
@@ -92,5 +93,6 @@
       "header"
       "body"
     ];
+  };
   };
 }

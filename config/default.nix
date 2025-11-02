@@ -22,14 +22,12 @@
     ./lsp/fidget.nix
     ./lsp/lsp.nix
     ./nix-develop.nix
-    ./kulala.nix
     ./aerial.nix
     ./autosave.nix
     ./notify.nix
     ./barbecue.nix
     ./noice.nix
     ./neoscroll.nix
-    ./markview.nix
     ./zen-mode.nix
     ./yazi.nix
     ./wtf.nix
@@ -80,8 +78,8 @@
       # Debuggers
       netcoredbg # C# debugger
       asm-lsp # Assembly LSP
-      bashdb # Bash debugger
       delve # Go debugger
+      gcc
 
     ];
   };
