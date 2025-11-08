@@ -15,7 +15,7 @@
       };
     }
     {
-      key = "<leader>/";
+      key = "<leader>?";
       mode = [ "n" ];
       action = "<cmd>lua Snacks.picker.grep()<CR>";
       options = {
