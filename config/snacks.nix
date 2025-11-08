@@ -15,6 +15,24 @@
       };
     }
     {
+      key = "<leader>/";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.grep()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      key = "<leader>n";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.notifications()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
       key = "<leader>fb";
       mode = [ "n" ];
       action = "<cmd>lua Snacks.picker.buffers()<CR>";
