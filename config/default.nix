@@ -6,7 +6,6 @@
     ./toggleterm.nix
     ./themes.nix
     ./lazygit.nix
-    ./lualine.nix.dashboard.nix
     ./bufferline.nix
     ./snacks.nix
     ./gitsigns.nix
