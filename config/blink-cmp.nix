@@ -180,7 +180,7 @@
         };
         completion = {
           menu = {
-            border = "none";
+            border = "rounded";
             draw = {
               gap = 1;
               treesitter = [ "lsp" ];
@@ -203,7 +203,7 @@
           documentation = {
             auto_show = true;
             window = {
-              border = "single";
+              border = "rounded";
             };
           };
           accept = {
