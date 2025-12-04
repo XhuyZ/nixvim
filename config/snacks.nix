@@ -1,8 +1,62 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 {
   plugins.snacks = {
     enable = true;
     autoLoad = true;
+    settings = {
+      dashboard = {
+        sections = [
+          {
+            header = ''
+              "██╗  ██╗██╗  ██╗██╗   ██╗██╗   ██╗███████╗"
+              "╚██╗██╔╝██║  ██║██║   ██║╚██╗ ██╔╝╚══███╔╝"
+              " ╚███╔╝ ███████║██║   ██║ ╚████╔╝   ███╔╝ "
+              " ██╔██╗ ██╔══██║██║   ██║  ╚██╔╝   ███╔╝  "
+              "██╔╝ ██╗██║  ██║╚██████╔╝   ██║   ███████╗"
+              "╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝"
+            '';
+          }
+          {
+            icon = " ";
+            title = "Keymaps";
+            section = "keys";
+            gap = 1;
+            padding = 1;
+          }
+          {
+            icon = " ";
+            title = "Find Files";
+            __unkeyed-1.__raw = "require('snacks').dashboard.sections.recent_files({cwd = true})";
+            gap = 1;
+            padding = 1;
+          }
+          {
+            icon = " ";
+            title = "Projects";
+            section = "projects";
+            gap = 1;
+            padding = 1;
+          }
+          {
+            pane = 1;
+            icon = " ";
+            desc = "Browse Repo";
+            padding = 1;
+            key = "b";
+            action.__raw = ''
+              function()
+                Snacks.gitbrowse()
+              end'';
+          }
+          (lib.mkIf config.plugins.lazy.enable { section = "startup"; })
+        ];
+      };
+    };
   };
   keymaps = [
     {
@@ -71,7 +125,7 @@
     {
       key = "<leader>gB";
       mode = [ "n" ];
-      action = "<cmd>lua Snacks.picker.git_browser()<CR>";
+      action = "<cmd>lua Snacks.picker.gitbrowse()<CR>";
       options = {
         silent = true;
         noremap = true;
