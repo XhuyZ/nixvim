@@ -60,6 +60,24 @@
       };
     }
     {
+      key = "<leader>gb";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.git_branches()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      key = "<leader>gB";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.git_browser()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
       key = "<leader>gs";
       mode = [ "n" ];
       action = "<cmd>lua Snacks.picker.git_status()<CR>";
