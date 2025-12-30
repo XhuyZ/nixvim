@@ -3,14 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
   };
 
   outputs =
     {
       nixpkgs,
-      nixpkgs-unstable,
       nixvim,
       ...
     }:
@@ -40,9 +38,6 @@
         '';
         packages = [
           nvim
-          pkgs.dotnet-sdk
-          pkgs.dotnet-aspnetcore
-          pkgs.nodePackages_latest.nodejs
         ];
       };
     };

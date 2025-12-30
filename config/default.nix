@@ -34,6 +34,7 @@
     ./timerly.nix
     ./treesj.nix
     ./web-devicons.nix
+    ./clipboard.nix
   ];
 
   config = {
