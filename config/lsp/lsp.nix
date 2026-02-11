@@ -21,6 +21,7 @@
       servers = {
         rust_analyzer = {
           enable = true;
+          installRustc = false;
         };
         omnisharp = {
           enable = true;
