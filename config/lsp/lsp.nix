@@ -19,6 +19,9 @@
       enable = true;
       inlayHints = true;
       servers = {
+        rust_analyzer = {
+          enable = true;
+        };
         omnisharp = {
           enable = true;
         };
