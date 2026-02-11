@@ -22,6 +22,7 @@
         rust_analyzer = {
           enable = true;
           installRustc = false;
+          installCargo = false;
         };
         omnisharp = {
           enable = true;
