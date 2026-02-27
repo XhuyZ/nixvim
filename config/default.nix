@@ -1,6 +1,7 @@
 { pkgs, lib, ... }:
 {
   imports = [
+    ./rustaceanvim.nix
     ./dbee.nix
     ./crates.nix
     ./keymaps.nix
