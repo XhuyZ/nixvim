@@ -125,7 +125,7 @@
     {
       key = "<leader>gB";
       mode = [ "n" ];
-      action = "<cmd>lua Snacks.picker.gitbrowse()<CR>";
+      action = "<cmd>lua Snacks.gitbrowse()<CR>";
       options = {
         silent = true;
         noremap = true;
