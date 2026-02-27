@@ -1,0 +1,5 @@
+{
+  plugins.crates = {
+    enable = true;
+  };
+}

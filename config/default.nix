@@ -1,6 +1,8 @@
 { pkgs, lib, ... }:
 {
   imports = [
+    ./dbee.nix
+    ./crates.nix
     ./keymaps.nix
     ./treesitter.nix
     ./toggleterm.nix

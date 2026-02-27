@@ -1,0 +1,23 @@
+# Nix build outputs
+result
+result-*
+*.drv
+
+# Nix local state
+.direnv
+.envrc
+
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
