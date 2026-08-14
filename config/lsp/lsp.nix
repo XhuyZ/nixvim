@@ -152,11 +152,11 @@
   };
   extraPlugins = with pkgs.vimPlugins; [
     ansible-vim
-    roslyn-nvim
+    # roslyn-nvim
   ];
-  extraPackages = with pkgs; [
-    roslyn-ls
-  ];
+  # extraPackages = with pkgs; [
+  #   roslyn-ls
+  # ];
 
   extraConfigLua = ''
     local _border = "rounded"
