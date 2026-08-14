@@ -25,7 +25,7 @@
           installCargo = false;
         };
         omnisharp = {
-          enable = true;
+          enable = false;
         };
         superhtml = {
           enable = true;

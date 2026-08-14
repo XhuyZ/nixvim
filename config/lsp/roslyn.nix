@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 {
   lsp.servers.roslyn_ls = {
-    enable = true;
+    enable = false;
 
     settings = {
       cmd = [
