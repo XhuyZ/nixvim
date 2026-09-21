@@ -1,3 +1,5 @@
+
+
 # ✨ Nixvim Flake Config - Inspired by LazyVim
 
 This is a personal Neovim configuration written using **Nix Flakes** and powered by [nixvim](https://github.com/nix-community/nixvim). It is heavily inspired by [LazyVim](https://lazyvim.github.io/) and aims to provide a modern, modular, and reproducible setup for Neovim, leveraging the power of the Nix ecosystem.
@@ -28,7 +30,7 @@ nix develop
 nix profile install github:XhuyZ/nixvim
 ```
 
-Once inside the `nix develop` environment, just run:
+If using Method 1, once inside the `nix develop` environment, just run:
 
 ```bash
 nvim
